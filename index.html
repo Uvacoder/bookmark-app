@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark App</title>
+    <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=theodorusclarence.github.io"
+        type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href='#' class='btn' id='show-modal'>Add Bookmark</a>
+
+    <div class="container" id='bookmarks-container'>
+        <!-- <div class="btn btn-item">
+            <img src="https://www.google.com/s2/favicons?domain=theodorusclarence.github.io" alt="favicon">
+            <a href='https://theodorusclarence.github.io' target="_blank" class="item__link">test</a>
+            <i class="fas fa-times close-btn"></i>
+        </div> !-->
+    </div>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <div class="modal__header">
+                <h3>Add Bookmark</h3>
+                <a href="#" class="close-btn" id='close-modal'><i class="fas fa-times"></i></a>
+            </div>
+            <div class="modal__body">
+                <form action="" id="bookmark-form">
+                    <label for="name">Website Name</label>
+                    <input type="text" name="name" class="modal__input" id="website-name">
+                    <label for="url">Website Link</label>
+                    <input type="text" name="name" class="modal__input" id="website-link">
+                    <button type="submit" class="btn submit-btn">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
